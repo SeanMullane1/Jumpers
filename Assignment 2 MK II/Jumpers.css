@@ -1,0 +1,182 @@
+/*Sean Mullane R00139622*/
+/*Web Development Y2*/
+
+
+body, html {
+  background:grey;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: red;
+}
+h1, h2{
+  background: white;
+  width: 35%;
+  margin-left: 32.5%;
+  text-align: center;
+  border: solid black 3px;
+  border-radius: 10px;
+}
+
+h3{
+  display: inline;
+  border: solid black 3px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+header{
+  background: black;
+  width: 100%;
+
+}
+#intro{
+  background: white;
+  width: 35%;
+  margin-left: 32.5%;
+  text-align: center;
+  border: solid black 3px;
+  border-radius: 10px;
+
+}
+
+#customise{
+  width: 100%;
+  height: 100%;
+  background: yellow;
+  background-image: url(snowing.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#Contact{
+  padding-top: 1px;
+  width: 100%;
+  height: 100%;
+  background: blue;
+  text-align: center;
+  background-image: url(snowtwo.jpg);
+  background-size: cover;
+  position: relative;
+
+}
+
+#details{
+  margin-top: 10%;
+  width: 25%;
+  background: red;
+  margin-left: 37.5%;
+  border: solid white 2px;
+  border-radius: 50px;
+
+}
+
+#detailsTwo{
+  width: 25%;
+  background: blue;
+  margin-left: 10%;
+  border: solid white 2px;
+  border-radius: 50px;
+  margin-top: -12%;
+
+}
+
+#detailsThree{
+  width: 25%;
+  background: orange;
+  margin-left: 65%;
+  margin-top: -15.5%;
+  border: solid white 2px;
+  border-radius: 50px;
+
+}
+
+#products{
+  width:20%;
+  background: blue;
+  margin-top: -30%;
+  position:absolute;
+  border: 3px solid green;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+#definedHoodie{
+  width:20%;
+  background: blue;
+  margin-left: 23%;
+  margin-top: -30%;
+  position:absolute;
+  border: 3px solid green;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+#size{
+  width:20%;
+  background: green;
+  margin-top: -18%;
+  position:absolute;
+  border: 3px solid black;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 20px;
+  visibility: hidden;
+
+}
+
+#Images{
+  margin-top: -6%;
+  background: red;
+  width: 20%;
+  position: absolute;
+  border: 3px solid blue;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 20px;
+  visibility: hidden;
+}
+#JumperChosen{
+  width: 360px;
+  height: 360px;
+  margin-left: 60%;
+  position: relative;
+  margin-top: 2%;
+  visibility: hidden;
+}
+
+#ImageChosen{
+  width: 100px;
+  height: 100px;
+  margin-left: 69.5%;
+  position: absolute;
+  margin-top: -20%;
+  visibility: hidden;
+
+}
+
+#totalPrice{
+  height: 80px;
+  width: 150px;
+  color: white;
+  background: black;
+  margin-top: 2%;
+  text-align: center;
+  border: 3px solid blue;
+  border-radius: 25px;
+  margin-left: 67%;
+  visibility: hidden;
+  position: absolute;
+
+}
+
+#paymentType{
+  visibility: hidden;
+}

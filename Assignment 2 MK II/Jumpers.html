@@ -1,0 +1,172 @@
+<! --Sean Mullane R00139622 ->
+<! --Web Development Y2 ->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jumpers Design Cork</title>
+    <link rel="stylesheet" href="Jumpers.css">
+  </head>
+
+  <body>
+      <h1>Welcome To Jumper Design Cork</h1>
+
+    <section id ="customise">
+      <br>
+      <h2 id ="top">Products</h2>
+        <img src="black.jpg" id ="JumperChosen" alt="Jumperpicked" />
+  <form action= "http://atlantis.cit.ie/displayvalues.php" id ="formDetails">
+        <div id="products">
+            <p>
+                Customies a Jumper
+            </p>
+              <select name = "jumper" onchange= "pickTop(this.value)" form ="formDetails">
+                <option value ="two">please select a jumper</option>
+                <option value ="Black">Black</option>
+                <option value ="Blue">Blue</option>
+                <option value ="Red">Red</option>
+                <option value ="Green">Green</option>
+                <option value ="White">White</option>
+
+              </select>
+
+              <p id = "price"></p>
+
+        </div>
+
+        <div id="definedHoodie">
+          <p>
+            Select a Custom Christmas Jumper
+          </p>
+        <select name = "desinedjumper" onchange= "pickdefined(this.value)" form ="formDetails">
+          <option value ="four">Christmas jumper</option>
+          <option value ="DJJesus">DJJesus</option>
+          <option value ="Santa">Santa</option>
+          <option value ="Rudolf">Rudolf</option>
+          <option value ="Christmas">Christmas</option>
+          <option value ="Snowman">Snowman</option>
+        </select>
+
+          <p id = "definedprice"></p>
+
+        </div>
+
+
+        <div id="size">
+            <p>
+              Please Select a Size
+            </p>
+              <select name ="sizes" onchange= "pickSize(this.value)" form ="formDetails">
+                <option value ="three">please select a size</option>
+                <option value ="small">S</option>
+                <option value ="medium">M</option>
+                <option value ="large">L</option>
+                <option value ="xlarge">XL</option>
+              </select>
+
+              <p id = "sizePrice"></p>
+        </div>
+
+  <img src="" id ="ImageChosen" alt="Imagepicked" />
+
+        <div id="Images">
+          <p>
+            Please pick a Image
+          </p>
+          <select name ="image" onchange= "pickImage(this.value)" form ="formDetails">
+            <option value ="one">please select an image</option>
+            <option value ="Dog">Dog</option>
+            <option value ="Apple">Apple</option>
+            <option value ="Tree">Tree</option>
+            <option value ="Nike">Nike</option>
+            <option value ="Kick">Kicking</option>
+
+          </select>
+          <p id = "imagePrice"></p>
+
+        </div>
+
+        <div id="totalPrice" >
+          <p>Your Total Price is: </p>
+
+        <p id= "fullPrice"></p>
+
+        </div>
+
+
+  </section>
+
+<section id ="Contact">
+  <h2>Contact Details</h2>
+
+    <div id = "details">
+
+
+          <p>
+            Contact Information
+          </p>
+
+          Name:<br>
+          <input type="text" name="fname" placeholder="Enter your Number" required minLenth = "2"><br>
+          E-mail:<br>
+          <input type="email" name="email" placeholder="Enter your Email" required><br>
+          Phone:<br>
+          <input type="text" name="phone" placeholder="Enter your Number" required minLength="10" maxlength="10">
+
+    </div>
+
+    <div id ="detailsTwo">
+          <p>
+            Contact Information
+          </p>
+
+          Address:<br>
+          <input type="text" name="address" placeholder="Enter your address" required minLength="3" maxlength="15"><br>
+          Town:<br>
+          <input type="text" name="town" placeholder="Enter your town" required minLength="3" maxlength="15"><br>
+          City:<br>
+          <input type="text" name="city" placeholder="Enter your city" required minLength="3" maxlength="15"><br>
+
+
+          County:<br>
+          <select name ="counties" form ="formDetails">
+            <option value ="Cork">Cork</option>
+            <option value ="Limerick">Limerick</option>
+            <option value ="Dublin">Dublin</option>
+            <option value ="Sligo">Sligo</option>
+
+          </select>
+
+    </div>
+
+
+    <div id="detailsThree">
+      <p>Please Pick your payment: </p>
+      Cash<input type="radio" name="payment" value="cash" form ="formDetails" onclick = "pickpayment(this.value)" required><br>
+      Credit Card<input type="radio" name="payment" value="credit" form ="formDetails" onclick = "pickpayment(this.value)" ><br>
+
+      <div id ="paymentType">
+         <p id = "paymentinfoOne"></p>
+         <input type ="text" name ="paymentdetails1" minLength = "3">
+         <p id = "paymentinfoTwo"></p>
+         <input type ="tel" name ="paymentdetails2" minLength = "7" maxlength="7">
+         <p id = "paymentinfoThree"></p>
+         <input type ="tel" name ="paymentdetails3" placeholder="mm/yyyy" minLength = "7" maxlength="7">
+
+      </div>
+
+    </div>
+
+  <input type="submit" value="submit"> <input type="reset" value="reset">
+</form>
+
+
+</section>
+
+
+
+<script type="text/javascript" src ="Jumpers.js">
+</script>
+  </body>
+</html>
