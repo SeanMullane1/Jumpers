@@ -1,5 +1,2 @@
 language: javascript
-rvm:
- - 2.2
- - javascript
- - rbx-3
+sudo: enabled
